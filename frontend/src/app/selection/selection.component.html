@@ -1,0 +1,94 @@
+<script src="../tour-list/tour-list.component.ts"></script>
+<div class="search">
+    <div class="search__container container_top">
+        <form action="#" class="form">
+            <div class="form__input-wrapper form__input--location">
+                <label for="location" class="form__label">Откуда:</label>
+                <div class="form__input">из Костаная</div>
+            </div>
+            <div class="form__input-wrapper form__input--country">
+                <label for="location" class="form__label">Город в который едете:</label>
+                <input
+                        [(ngModel)]="toCity"
+                        type="text"
+                        name="toCity"
+                        class="form__input"
+                        placeholder="Куда"/>
+            </div>
+            <div class="form__input-wrapper form__input--date">
+                <label for="datetime" class="form__label">Дата вылета:</label>
+                <input
+                        [(ngModel)]="startDate"
+                        name="startDate"
+                        type="date" class="form__input" value="">
+
+            </div>
+            <div class="form__input-wrapper form__input--days">
+                <label for="datetime" class="form__label">Вылет обратно:</label>
+                <input
+                        [(ngModel)]="endDate"
+                        name="endDate"
+                        type="date" class="form__input" >
+            </div>
+            <div class="form__input-wrapper form__input--stars">
+                <label for="stars" class="form__label">Звезд:</label>
+                <select class="form__input" name="rating"  [(ngModel)]="rating">
+                    <option class = 'color' value="1">1 звезда</option>
+                    <option class = 'color' value="2">2 звезды</option>
+                    <option class = 'color' value="3">3 звезды</option>
+                    <option class = 'color' value="4">4 звезды</option>
+                    <option class = 'color' value="5">5 звезд</option>
+                    <option class = 'color' value="1-5">1-5 звезд</option>
+                </select>
+            </div>
+            <div class="form__input-wrapper form__input--tourists">
+                <label for="datetime" class="form__label">Туристов:</label>
+                <input
+                        [(ngModel)]="count"
+                        type="number" class="form__input" name="count" placeholder="2 взр"/>
+            </div>
+        </form>
+        <button class="form__btn" (click)="onSubmit()" type="submit">Найти</button>
+    </div>
+</div>
+
+<main class="main">
+    <div *ngIf="tours" class="all-tours-filter">
+        <div *ngFor="let tour of tours">
+            <div class="hot-tours-preview horizontal">
+                <div class="preview-image">
+                    <img src="https://ht.kz/fls/post/1521651414f6d18ce4.jpg" class="preview-img" alt="">
+                </div>
+                <div class="preview-content">
+
+                    <div class="preview-header">
+                        <div class="preview-title">{{ tour.name }}</div>
+                        <div class="preview-description">{{ tour.info }}</div>
+                    </div>
+
+                    <div class="preview-city">
+                        <img src="https://ht.kz/img/svg/tours/plane_round_yellow.svg" width="34" class="icon">Туры для<p>Алматы</p>
+                    </div>
+
+                    <div class="preview-price">
+                        <div class="price-value">от {{ tour.cost }}.</div>
+                    </div>
+
+
+                    <div class="preview-action">
+                        <a routerLink="/tours/{{tour.id}}" (click)="onClick(tour.id)" [id] = this.tour_id class="view-button site-button">Посмотреть тур</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div *ngIf="this.tours.length === 0">
+    <div class="tour-search">
+        <div class="tour-search-box">
+            <h2>Подбор тура онлайн</h2>
+            <p>Вы сможете самостоятельно подобрать тур, если воспользуетесь формой поиска. Выберите город вылета, страну прибытия, дату поездки, количество дней, количество человек, а также категорию отеля, и нажмите кнопку «найти туры». Наша система автоматически рассчитает стоимость путёвок по вашему запросу и выдаст результаты.</p>
+            <p>Также вы можете оставить заявку на подбор тура нашим специалистом. Будем рады вам помочь!</p>
+        </div>
+    </div>
+</div>

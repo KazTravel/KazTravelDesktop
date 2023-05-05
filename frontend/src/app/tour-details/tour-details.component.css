@@ -1,0 +1,118 @@
+.tour_det {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+div {
+  display: block;
+  margin-left: 55px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.block {
+  background: #FFF;
+  float: left;
+  margin: 0 20px 7px 0;
+  position: relative;
+}
+
+.det-image-wrap {
+  width: 268px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.det-image-wrap img {
+  width: 100%;
+}
+
+img {
+  vertical-align: middle;
+}
+
+img {
+  border: 0;
+}
+
+.det_txt {
+  margin-left: 288px;
+}
+
+.det_txt {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+#detHeader {
+  margin-bottom: 5px;
+  font-size: 20px;
+  margin-top: 0;
+  color: #000;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin: 5px 0 10px 0;
+}
+
+.detContent.info {
+  margin-bottom: 4px;
+}
+
+.detContent {
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+a {
+  cursor: pointer;
+}
+
+.price-wrap {
+  border-top: 1px solid #000;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.pull-left {
+  margin-left: 100px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.price-wrap p {
+  margin: 0;
+  color: #000000;
+  line-height: 1;
+}
+
+.price-wrap .price {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+
+.det_btt button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.det_btt button:hover {
+  background-color: #0062cc;
+}

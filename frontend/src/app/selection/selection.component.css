@@ -1,0 +1,406 @@
+.tour-search {
+    background-color: #EBF0F8;
+    padding-left: 105px;
+    padding-right: 105px;
+    text-align: flex;
+}
+
+.tour-search-box {
+    background-image: url('/assets/img/search/search.png');
+    background-size: cover;
+    padding: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.tour-search h2 {
+    color: black;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-left: 250px;
+}
+
+.tour-search p {
+    color: black;
+    font-size: 20;
+    margin-left: 250px;
+}
+
+.search {
+    background: rgba(242, 199, 61, 0.99);
+    padding: 1.5625em 1.25em;
+}
+.search__container {
+    display: flex;
+}
+
+.container_top {
+    padding: 0 0.9375rem;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+
+.form {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.75em 0px 0px 0.75em;
+    width: 68.4375rem;
+}
+.form__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0.9375rem 1.5625rem;
+}
+.form__label {
+    font-size: 0.75rem;
+    line-height: 141.666667%; /* 17/12 */
+    text-transform: lowercase;
+    color: #808080;
+}
+.form__input {
+    font-weight: 600;
+    line-height: 143.75%; /* 23/16 */
+    color: #333333;
+}
+.form__btn {
+    font-weight: 600;
+    line-height: 143.75%; /* 23/16 */
+    text-transform: uppercase;
+    padding: 1.5625em 3.125rem;
+    background: #0062F8;
+    border-radius: 0px 0.75em 0.75em 0px;
+}
+.form__input--location {
+    max-width: 11.875rem;
+}
+.form__input--country {
+    max-width: 15.9375rem;
+}
+.form__input--date {
+    max-width: 11.25rem;
+}
+.form__input--days {
+    max-width: 10rem;
+}
+.form__input--stars {
+    max-width: 9.0625rem;
+}
+.form__input--tourists {
+    width: 10.3125rem;
+}
+
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    font-size: 0.875rem;
+    line-height: 142.857143%; /* 20/14 */
+    font-weight: 600;
+    background-color: #14E01B;
+    padding: 1.0714285714em 2.1428571429em;
+    border-radius: 1.7857142857em;
+}
+@media (max-width: 61.99875em) {
+    .button {
+        font-size: 0.625rem;
+    }
+}
+.search {
+    background: rgba(242, 199, 61, 0.99);
+    padding: 1.5625em 1.25em;
+}
+.search__container {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.75em 0px 0px 0.75em;
+    width: 68.4375rem;
+}
+.form__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0.9375rem 1.5625rem;
+}
+.form__label {
+    font-size: 0.75rem;
+    line-height: 141.666667%; /* 17/12 */
+    text-transform: lowercase;
+    color: #808080;
+}
+.form__input {
+    font-weight: 600;
+    line-height: 143.75%; /* 23/16 */
+    color: #333333;
+}
+.form__btn {
+    font-weight: 600;
+    line-height: 143.75%; /* 23/16 */
+    text-transform: uppercase;
+    padding: 1.5625em 3.125rem;
+    background: #0062F8;
+    border-radius: 0px 0.75em 0.75em 0px;
+}
+.form__input--location {
+    max-width: 11.875rem;
+}
+.form__input--country {
+    max-width: 15.9375rem;
+}
+.form__input--date {
+    max-width: 11.25rem;
+}
+.form__input--days {
+    max-width: 10rem;
+}
+.form__input--stars {
+    max-width: 9.0625rem;
+}
+.form__input--tourists {
+    width: 10.3125rem;
+}
+
+a:hover {
+    /* color: inherit; */
+    text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+
+/* Form */
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+button, input[type=submit] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+
+.search {
+    background: rgba(242, 199, 61, 0.99);
+    padding: 1.5625em 1.25em;
+}
+.search__container {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.75em 0px 0px 0.75em;
+    width: 68.4375rem;
+}
+.form__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0.9375rem 1.5625rem;
+}
+.form__label {
+    font-size: 0.75rem;
+    line-height: 141.666667%; /* 17/12 */
+    text-transform: lowercase;
+    color: #808080;
+}
+.form__input {
+    font-weight: 600;
+    line-height: 143.75%; /* 23/16 */
+    color: #333333;
+}
+.form__btn {
+    font-weight: 600;
+    line-height: 143.75%; /* 23/16 */
+    text-transform: uppercase;
+    padding: 1.5625em 3.125rem;
+    background: #0062F8;
+    border-radius: 0px 0.75em 0.75em 0px;
+}
+.form__input--location {
+    max-width: 11.875rem;
+}
+.form__input--country {
+    max-width: 15.9375rem;
+}
+.form__input--date {
+    max-width: 11.25rem;
+}
+.form__input--days {
+    max-width: 10rem;
+}
+.form__input--stars {
+    max-width: 9.0625rem;
+}
+.form__input--tourists {
+    width: 10.3125rem;
+}
+
+input{
+    border:none;
+}
+.hot-tours-preview {
+    margin-top: 20px;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+.preview-image {
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.preview-image .preview-img {
+    height: 212px;
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+
+.preview-content {
+    width: 70%;
+    padding: 20px 10px 10px 15px;
+    border: 1px solid #e1e1e1;
+    border-left: 0;
+    line-height: 1.1;
+}
+
+a {
+    color: #428bca;
+    text-decoration: none;
+    background: 0 0;
+}
+
+.preview-header {
+    margin-bottom: 10px;
+    min-height: 125px;
+}
+
+.preview-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.preview-price {
+    width: 70%;
+    float: left;
+}
+
+.preview-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.preview-description {
+    font-size: 16px;
+    color: #888;
+}
+
+.preview-city .icon {
+    position: absolute;
+    left: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.preview-city {
+    position: relative;
+    padding-left: 40px;
+}
+.preview-city, .preview-action {
+    max-width: 30%;
+    float: right;
+    font-size: 17px;
+}
+
+.preview-price .price-value {
+    line-height: 1;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.preview-header,.preview-price {
+    width: 70%;
+    float: left;
+}
+
+.preview-action {
+    max-width: 30%;
+    float: right;
+    font-size: 17px;
+}
+
+.hot-tours-preview .view-button {
+    padding: 10px 28px;
+}
+
+.site-button {
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 5px;
+    font-weight: 400;
+    padding: 16px 29px;
+    background-color: #0062f8;
+    color: #fff;
+    font-size: 16px;
+}
+
+.main{
+    width: 70%;
+    /*width: 1220px;*/
+    margin-left: 220px;
+}

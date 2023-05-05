@@ -1,0 +1,47 @@
+<div *ngIf="isItLogin == true">
+    <div class="user-profile">
+        <div class="user-photo">
+            <img src="https://gamerwall.pro/uploads/posts/2023-03/thumbs/1678502598_gamerwall-pro-p-odinokaya-sobaka-vkontakte-5.png" alt="User Photo">
+        </div>
+        <div class="user-info">
+            <h1>User Name : {{this.nameuser}}</h1>
+            <p>First name: {{this.firstname}}</p>
+            <p>Last name: {{this.lastname}}</p>
+            <p>Email: {{this.email}}</p>
+            <p>Balance: {{this.balance}}</p>
+            <p>Other Information</p>
+        </div>
+    </div>
+
+    <div class="purchase-history">
+        <h2>Purchase History</h2>
+        <app-sells [user_id]="this.user_id"></app-sells>
+    </div>
+    <button (click)="logout()">Log Out</button>
+    <button (click)="getData()">Data</button>
+    <h3>{{this.user_id}}</h3>
+</div>
+    <div *ngIf="isItLogin == false" class="login-user">
+        <div class="center">
+            <h2>Кабинет туриста</h2>
+            <form (ngSubmit)="submit()">
+                <div class="txt_field">
+                    <input type="text" name="username"  [(ngModel)]="username" required/>
+                    <span></span>
+                    <label for="username" class="login-username">Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" name="password" [(ngModel)]="password" required />
+                    <span></span>
+                    <label for="password" class="login-username" >Password</label>
+                </div>
+                <div class="form-group col-3">
+                    <button class="btn btn-primary" type="submit" class="login-button">Login</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+<!--<input [(ngModel)]="name" type="text">-->
+<!--<button (click)="ShowName()">Show</button>-->

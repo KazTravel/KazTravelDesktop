@@ -1,0 +1,40 @@
+<!-- <div *ngIf="tours">
+    <div *ngFor="let tour of tours">
+        <h3>
+            <a routerLink="/tours/{{tour.id}}" (click)="onClick(tour.id)" [id] = this.tour_id>
+                {{ tour.name }}
+            </a>
+        </h3>
+    </div>
+</div> -->
+
+<main class="main">
+    <div *ngIf="tours">
+        <div *ngFor="let tour of tours">
+            <div class="hot-tours-preview horizontal">
+                <div class="preview-image">
+                    <img src="https://ht.kz/fls/post/1521651414f6d18ce4.jpg" class="preview-img" alt="">
+                </div>
+                <div class="preview-content">
+
+                    <div class="preview-header">
+                        <div class="preview-title">{{ tour.name }}</div>
+                        <div class="preview-description">{{ tour.info }}</div>
+                    </div>
+
+                    <div class="preview-city">
+                        <img src="https://ht.kz/img/svg/tours/plane_round_yellow.svg" width="34" class="icon">Туры для<p>Алматы</p>
+                    </div>
+
+                    <div class="preview-price">
+                        <div class="price-value">от {{ tour.cost }}.</div>
+                    </div>
+
+                    <div class="preview-action">
+                        <a routerLink="/tours/{{tour.id}}" (click)="onClick(tour.id)" [id] = this.tour_id class="view-button site-button">Посмотреть тур</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

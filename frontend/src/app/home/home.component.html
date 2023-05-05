@@ -1,0 +1,88 @@
+<div class="all" xmlns="http://www.w3.org/1999/html">
+    <div class="container">
+        <h2 class="text-hot-tours-almaty">Горящие туры для Алматы</h2>
+        <h4 class="best-adds">Самые лучшие предложения</h4>
+        <hr style="width:90%;text-align:left;margin-left:0">
+
+
+
+
+        <div class="offer-rows">
+            <div class="each-offer" *ngFor="let toptour of tours10">
+                <div class="offer">
+                    <img src="https://ht.kz/fls/post/156535855470cd4fbb.jpg" class="offer-img">
+                    <h3>{{toptour.name}}</h3>
+                    <h4>{{toptour.info}}</h4>
+                    <h2>Цена: от {{toptour.cost}} тг</h2>
+                    <button class="see-tour" routerLink="/tours/{{toptour.id}}" (click)="onClick(toptour.id)" [id] = this.tour_id> Посмотреть тур</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <h2 class="our-advantages">Наши преимущества</h2>
+        <div class="advantages">
+            <div class="each-advantage">
+                <img src="https://s3-alpha-sig.figma.com/img/cf34/ee08/a15276a1aa61cb362cc03cb0c26748ab?Expires=1683504000&Signature=dWNKj44XML0AgE-F5emR7F5sN--x-l06JIvGZ734FY2ug9sKNmE9KODgqWQMxgPW0ghL2-k4swL947oQiVyTO6jiL1pHxqxm-GSG4Vefm80-o7RTikLJORJJapiESbWG0BdRMTxzDDAYffLLC5KlpT8dFXI0xAZ7-3ZnNHC5MR940nE5VczuyB1ADH7iYmjFSRGkik8MAg4W4mZwvIAiKqJDTflV00qDDiTN4kJ5hHQFBo8Qrm~ArNM7-jJ~mm7nXxyllkaE61mGPm7HrBOnSsSfheuuNTGAfoi78~lOq6jVbPiVk8r3TVSwrczqptfD4HwecgGZ2XRdNziISgCcqg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                <h3>Мы работаем ради комфорта клиента</h3>
+                <h4>Мы работаем только с проверенными и надежными партнерами, чтобы обеспечить безопасность и комфорт нашим клиентам во время путешествия.</h4>
+            </div>
+            <div class="each-advantage">
+                <img src="https://s3-alpha-sig.figma.com/img/67cc/4ac5/b50e0bb97ebe05c704664b61712a438c?Expires=1683504000&Signature=bsY~KFGsML-Js~GLdsTyA~cjCU2LjQW0yijtweTq2ReKibexmHPF5ZZaHwAaOf768BdC-wUbFRjxSq0COh4s9lxramoTJI8OtiZJj2FD5OqxWYLoSoYkpAFoQQr2l7Qe8B2dF82zBZEDPTfw0yaqLREEYbLm2RPiI-6Js1aBBnQtnzph9Sa23~31HM8ScbsfZFkk3oV1EYb2SYTW7w4nipRP~RqSJw~RTo7UrG9khlpekW1WfBzQIuf0oi3Hu1Gri7JFVwRrVzkb6s0-u8V5nfGvVB7ixxICDn3NRCRpaG374EHlJW6hkWY5T5hjVKr3pDfTR~N~S0qsjZHCjZyWCw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                <h3>Более выгодные услуги</h3>
+                <h4>Наша компания предлагает привлекательные цены и гибкие условия оплаты, чтобы каждый мог позволить себе отдыхать и путешествовать.</h4>
+            </div>
+            <div class="each-advantage">
+                <img src="https://s3-alpha-sig.figma.com/img/2e4a/68c6/00670cbd2e80d199e8220d1ba90f16ff?Expires=1683504000&Signature=TO1LAf4kJgil~bu6~g6M7W0J~CAtn~45GSbEkfLG93snblRa1GWR3Edz56bRLf8HC853zGExehWmFbCjyeciGMaWTvWw6~Crac6gNIG4OyXMcoAhoGgsW-K7rZZ5bCb3GsEbUST29Drf57rrEkdEqNHOCJWwxG2l1bB52MZ8zv2sZX0YlNez59126qtoXBQ3ChjEd5T7Wx-lnpKtS40x6p90YqmZwS6fjE6DwUV6ohREOFjYnwC9HmDC5QKKBzYBbBKLbPcFyiN-tGErkc3FwejJ280q7qyk6lBdF4-jRWqxLUBZRQJ3Kdd6BrAbCaPAlwOKe0lg8OkaxV5SUIFspw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                <h3>Широкий выбор направлений</h3>
+                <h4>Наша компания предоставляет широкий выбор туристических направлений, чтобы каждый клиент мог найти идеальный вариант для себя.</h4>
+            </div>
+            <div class="each-advantage">
+                <img src="https://s3-alpha-sig.figma.com/img/13fb/b8a9/f9887f9bce915d5d9f807f7bde034ff8?Expires=1683504000&Signature=iUkvikJBffQQczQsUNpRHLAIX-3Vm18Sy2dNzlHwcdNsgIoaI8MJdk7CoeIvF-qxJX7e3aEeleM9IvEqPRp~9tqoAx-312ceOhvP2VT0-jwRTC9NA8ddbsRy2JXbzR-gxNz~6HV~U2DzkOJx-3YAJhTM7weL6UZh5nWPIJ2rGGS3eFvAkpebpyh7YSvzxhsaNco4CWjkY6iOjBuk1IEjikgkwkYN8TMKv2LvAkBMGdTZQdvlWPNvH2v72M6I1JvQ96PiHDUmKf13ZZVrNsUe4o6c~FjB6mIS-chJBlLqnvojkkJ7DJjh7cmF-Qf8UuZTulwME-PtjYlLSGq-GqjPQw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                <h3>Поддержка 24/7</h3>
+                <h4>Мы предоставляем 24/7 поддержку наших клиентов во время путешествия, что позволяет им чувствовать себя уверенно и защищенно.</h4>
+            </div>
+            <div class="each-advantage">
+                <img src="https://s3-alpha-sig.figma.com/img/9171/2cea/64e1f92e9c2657f927c18b7d3c11894f?Expires=1683504000&Signature=pCowZxb0jqbT~ILR5CgreS3kaiOb9XSj5yiD0lTE0me8h0~F7oMY5wgKGJetjQ2z1LF6lhzjsVCTsOOzWplrM-Qu~xG4zV30EHGRIsb-Z4IwDSgjq2vtEELz63aNQQKY8GLAEIpCN7mNPtFocFigb5VJD5elZ3X3cxf1ErMU2tH9aHQuns8sP-8dv-~sOBLldne0PW1vGL8jgECbGY7vQdQ89j8DXdronS~OLZubhl8AyZCpzhGjr0kxmkm508~mHrj1a8FQ8gGzASJxJgw3aex3Oe~JF8edPbd3uzU2dRaSkIoW~AMgWtyo7w1~EXaXwUMcXwGGoy7ari1jwe2ssg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                <h3>За нас говорят отзывы туристов</h3>
+                <h4>Наша компания имеет множество положительных отзывов от клиентов, которые оценили нашу профессиональность, качество обслуживания и индивидуальный подход.</h4>
+            </div>
+            <div class="each-advantage">
+                <img src="https://s3-alpha-sig.figma.com/img/c3da/e628/5b9a8dc664cdf15bc8b512cafa8915d2?Expires=1683504000&Signature=qgNNa0LV7NHdTUpm2izmQYTSPZkW2iAk0N54pj8gs3qYo5RWCO4mP~JXGPuHToQgDJJMcpR--vRK5uJiosWCzDQ2rhlyLCWlB0cxB3YL0hbseN1ElM9d8kCwohv9RzpB2N~DoIX9xgqrpZn42Ad4dwiEjISFVlrcAoYfsSomteB6rZAqv3A7Eni14jCql7EzeeRWZOWTz5e1gjBvXOg-u75~Y1~BAq1DHNkVuEjv7j8adi7kh45iOZTzdcZOYAolQ8rKAxP3RtOQA5YNqDsvDrugFWRb3JZ1J81p3bNmjnFoUTNn13-hrqyBDQvjwIn2523lVi7k1QoPsDwa~8fMQQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                <h3>Онлайн поиск и бронирование</h3>
+                <h4>У нас есть онлайн-поиск и бронирование, что делает процесс планирования путешествия быстрым, удобным и простым.</h4>
+            </div>
+        </div>
+        <div class="popular-countries">
+            <h3>Популярные страны</h3>
+            <p>Unlimited Vacation предлагает более 35 направлений туров по всему миру, включая пляжные, экскурсионные, лечебные, горнолыжные, тематические туры и круизы. У нас обширная отельная база и опытные сотрудники, готовые помочь вам выбрать идеальный тур.<br> Путешествуйте с нами и создайте незабываемые впечатления!</p>
+            <div class="each-country">
+                <img src="https://s3-alpha-sig.figma.com/img/0a5d/d204/ca070b83f7777cb87e708cc48e8cb202?Expires=1683504000&Signature=Q00kosudBIvqMmpLZQkCsgl7TRFPGW2VhmE9WUvXWX8iFzqAq3PkoOMDD0CtxCjXfdM0b6f6Zvz9HGKpPKfmpg8Kf2H3ubb6NO4fsaRatIkbfWOQyRx22lbIOt4LKUrT3QyEOP5PqPaTCZ~YTZzeVjsAZSaD0brPw1abbBaUYuHGZHBFPYH55DGKKUlZAMjGPPJYuHsv1Vomo~O2d~MX0DU~TTukTOgw9WUThKihPrWNL7QzDBl0v79TTjHDIxX63mph9I0EDdJuz2GwbehqsGahs4kxoVuyGnz9F20wOMjacQOWE98gCg~uFbVYkcVwJnTlOF-hoZ-kg1LjhlJ~mQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" class="img-country">
+                <img src="https://s3-alpha-sig.figma.com/img/da24/cfd8/5dabb1a94dc94cdb4372530b87b7ad51?Expires=1683504000&Signature=XSZcYlZQIcHBQpw0NBmIJTrwdL27YpPxKbRIQffHdVEyXkLblyJGYaefI7UESI0OkdzFKCeP1yCRyrEo6D~8gSWpdHjW2SOUHYUTPUN2VHPuczxrH22Y3DGhLCS6R~Q6UH3gXmHICHvXM9A7hADeWZ1ObJr1pc4n41q2LugWSVlcSVEEykdhl74seKA-7-2kVifD0Lp7aaX1Qbfm7f0--0ABy8fK5Wu5SIc4rJOqk2MfW9HQrPBivlFpbLsEbISKtlMSH0SifHI4eipAsLmTFsmZ1iP0qawv-oY-vPkbW~FTWt0Rw-a6LaUFKFEJ3BGTl7ZAzncwROMakCJsyOZG8Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" class="icon-country">
+                <div class="each-country-text">
+                    <h2>Египет</h2>
+                    <div class="line"></div>
+                    <p>Египет - страна с удивительной историей и культурой, привлекающая туристов со всего мира. Здесь можно посетить древние пирамиды и гробницы фараонов, а также насладиться красивыми пляжами и коралловыми рифами Красного моря. В Египте множество возможностей для погружения в древний мир, а также для шоппинга и приобретения древних и необычных вещиц. Посещение Египта обещает незабываемые впечатления и атмосферу древности.</p>
+                    <h3>Туры в Египет от 234 000 тг.</h3>
+                </div>
+                <hr style="width:100%;text-align:left;margin-top:35px">
+            </div>
+        </div>
+        <div class="big-economy">
+            <h3>Горящие туры от турфирмы Unlimited Vacation. Большая экономия</h3>
+            <p>Наша туристическая компания предлагает горящие туры в Турцию, Египет, Таиланд и ОАЭ с вылетами из различных городов Казахстана по очень привлекательным ценам. Мы постоянно следим за изменениями в туристическом рынке и предлагаем своим клиентам лучшие предложения на горячие путевки с большими скидками. Наш сайт регулярно обновляется новыми горящими турами, так что вы всегда сможете найти интересующее вас предложение. Подпишитесь на нашу рассылку, чтобы первыми узнавать о новых горячих турах и не упустить шанс сэкономить на отдыхе. Мы гарантируем, что наши горящие туры привнесут в вашу жизнь яркие впечатления и незабываемые воспоминания!</p>
+            <hr style="width:100%;text-align:left;margin-top:20px">
+        </div>
+        <div class="rebrending">
+            <h3>Ребрендинг турагентства KazTravel Co. Наше новое имя - Unlimited Vacation.</h3>
+            <p>С 2022 года наша туристическая компания KazTravel Co. успешно отправляет людей в путешествия по всему миру. Однако, мы решили не останавливаться на достигнутом и перезапустить нашу компанию под новым брендом - Unlimited Vacation. Это отражает нашу основную миссию - помочь нашим клиентам получить неограниченное количество незабываемых впечатлений во время отпуска.
+                Мы провели тщательный анализ рынка и потребностей наших клиентов, и пришли к выводу, что мы должны расширить нашу линейку услуг и предложить больше возможностей для того, чтобы каждый клиент мог найти именно то, что ищет. Мы по-прежнему предлагаем горящие туры с выгодными ценами, но теперь наша компания также предлагает индивидуальные туры, экскурсионные программы, круизы, бронирование авиабилетов и отелей.
+                Unlimited Vacation - это не только новое имя, но и новая философия, основанная на высоком качестве обслуживания, индивидуальном подходе к каждому клиенту и постоянном стремлении к улучшению. Мы сделали наш сайт более удобным и интуитивно понятным, чтобы каждый клиент мог быстро и легко найти нужную ему информацию.
+                Мы готовы помочь вам организовать незабываемый отдых, и уверены, что наш новый бренд Unlimited Vacation станет вашим надежным партнером в путешествиях!</p>
+            <hr style="width:100%;text-align:left;margin-top:20px">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<main class="main">
+    <div *ngIf="tour">
+        <div class="tour_det">
+            <div class="detail">
+                <div class="block det-image">
+                    <div class="det-image">
+                        <img src="https://ht.kz/fls/post/1521651414f6d18ce4.jpg">
+                    </div>
+                </div>
+
+                <div class="det_txt">
+                    <h1 id="detHeader">{{tour.name}}</h1>
+                    <div class="detContent info">{{tour.info}}</div>
+
+                    <div class="price-wrap">
+
+                        <div>
+
+                            <div class="pull-left">
+                                <p>Стоимость туров</p>
+                                <span class="price">от {{tour.cost}}.</span>
+                            </div>
+
+                            <div class="pull-left">
+                                <div class="det_btt pull-left">
+                                    <button (click)="buyTour()">Купить</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>

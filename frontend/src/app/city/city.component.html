@@ -1,0 +1,10 @@
+<div id="city_buttons" *ngFor="let city of cities">
+    <button type="button" (click)="onClick(city.id)">
+        {{city.name}}
+    </button>
+</div>
+
+
+<div *ngIf="id != undefined">
+    <app-tour-list [city_id]="this.id"></app-tour-list>
+</div>

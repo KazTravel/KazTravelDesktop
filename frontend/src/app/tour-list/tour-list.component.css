@@ -1,0 +1,125 @@
+.hot-tours-preview {
+  margin-top: 20px;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
+
+.preview-image {
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.preview-image .preview-img {
+  height: 212px;
+  width: 100%;
+}
+img {
+  vertical-align: middle;
+}
+img {
+  border: 0;
+}
+
+.preview-content {
+  width: 70%;
+  padding: 20px 10px 10px 15px;
+  border: 1px solid #e1e1e1;
+  border-left: 0;
+  line-height: 1.1;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+  background: 0 0;
+}
+
+.preview-header {
+  margin-bottom: 10px;
+  min-height: 125px;
+}
+
+.preview-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.preview-price {
+  width: 70%;
+  float: left;
+}
+
+.preview-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.preview-description {
+  font-size: 16px;
+  color: #888;
+}
+
+.preview-city .icon {
+  position: absolute;
+  left: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.preview-city {
+  position: relative;
+  padding-left: 40px;
+}
+.preview-city, .preview-action {
+  max-width: 30%;
+  float: right;
+  font-size: 17px;
+}
+
+.preview-price .price-value {
+  line-height: 1;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.preview-header,.preview-price {
+  width: 70%;
+  float: left;
+}
+
+.preview-action {
+  max-width: 30%;
+  float: right;
+  font-size: 17px;
+}
+
+.hot-tours-preview .view-button {
+  padding: 10px 28px;
+}
+
+.site-button {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 5px;
+  font-weight: 400;
+  padding: 16px 29px;
+  background-color: #0062f8;
+  color: #fff;
+  font-size: 16px;
+}

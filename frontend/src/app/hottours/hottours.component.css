@@ -1,0 +1,16 @@
+.container{
+    display: grid;
+    text-align: left;
+    margin-right:135px;
+    margin-left: 135px;
+    border: 1px solid rgba(169, 169, 169, 0.21);
+    border-radius: 5px;
+    padding: 15px;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: white;
+}
+
+.all{
+    background-color: #EBF0F8;
+}

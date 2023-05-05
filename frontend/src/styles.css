@@ -1,0 +1,37 @@
+/* Global Styles */
+
+* {
+  font-family: 'Open Sans';
+  font-style: normal;
+  color: #000000;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+  font-family: 'Open Sans';
+  font-style: normal;
+  color: #ffffff;
+}
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+main {
+  flex: 1;
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

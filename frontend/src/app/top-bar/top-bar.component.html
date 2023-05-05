@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&family=Work+Sans:wght@500&display=swap"
+            rel="stylesheet"
+    />
+    <title>Unlimited Vacation</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-container container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a routerLink = '/home' href="#" class="menu__link">Главная</a>
+                        </li>
+                        <li class="menu__item">
+                            <a routerLink = '/hottours' href="#" class="menu__link">Города</a>
+                        </li>
+                        <li class="menu__item">
+                            <a routerLink = '/countries' href="#" class="menu__link">Страны</a>
+                        </li>
+                        <li class="menu__item">
+                            <a routerLink = '/selection' href="#" class="menu__link">Подбор тура</a>
+                        </li>
+                        <li class="menu__item">
+                            <a routerLink = '/hotels' href="#" class="menu__link">Отели</a>
+                        </li>
+                        <li class="menu__item">
+                            <a routerLink = '/about' href="#" class="menu__link">О нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a routerLink = '/contact' href="#" class="menu__link">Контакты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a routerLink = '/usercabinet' href="#" class="menu__link">Кабинет туриста</a>
+                        </li>
+                        <li class="menu__item">
+                            <a routerLink = '/ruletka' href="#" class="menu__link">Рулетка</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="form-cur">
+                    <button class="curPrices" *ngIf="isItLogin == true" (click)="goToLoginPage()">
+                        {{this.user}}
+                    </button>
+                    <button class="cur" *ngIf="isItLogin == true" (click)="logout()">Выйти</button>
+                    <button class="curPrices" *ngIf="isItLogin == false" (click)="goToLoginPage()">
+                        Войти
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__bottom-container container">
+                <a href="#" class="logo">
+                    <img src="/assets/img/header/logo.svg" alt="logo" />
+                    <div class="logo__title">
+                        Unlimited<br />
+                        Vacation
+                    </div>
+                    <div class="logo__subtitle">
+                        Главный эксперт<br />
+                        по путешествиям
+                    </div>
+                </a>
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="https://t.me/+CKUe4YEvw4ZlNWNi" class="social__link">
+                                <img src="/assets/img/header/header-bottom/01.svg" alt="telegram" href="https://t.me/+CKUe4YEvw4ZlNWNi"/>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img
+                                        src="/assets/img/header/header-bottom/02.svg"
+                                        alt="instagram"
+                                />
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="/assets/img/header/header-bottom/03.svg" alt="facebook" />
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="/assets/img/header/header-bottom/04.svg" alt="youtube" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <a href="tel:87777608382" class="phone">
+                        <img src="/assets/img/header/header-bottom/05.svg" alt="phone" />8 (777) 760-83-82
+                    </a>
+                    <a href="tel:87777608382" class="button">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+</body>
+</html>
